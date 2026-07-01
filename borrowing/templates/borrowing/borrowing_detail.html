@@ -1,0 +1,5 @@
+<h1>Transaction Receipt</h1>
+<p>Member: {{ record.member }}</p>
+<p>Book borrowed: {{ record.book.title }}</p>
+<p>Checkout Date: {{ record.borrow_date }}</p>
+<a href="{% url 'borrowing_list' %}">Back to Logs</a>

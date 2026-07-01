@@ -1,0 +1,6 @@
+<h1>Borrowing Logs</h1>
+<ul>
+  {% for record in records %}
+    <li><a href="{% url 'borrowing_detail' record.pk %}">{{ record.member }} took out "{{ record.book.title }}"</a></li>
+  {% endfor %}
+</ul>

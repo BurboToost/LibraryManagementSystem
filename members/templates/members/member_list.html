@@ -1,0 +1,6 @@
+<h1>Library Members</h1>
+<ul>
+  {% for member in members %}
+    <li><a href="{% url 'member_detail' member.pk %}">{{ member.first_name }} {{ member.last_name }}</a></li>
+  {% endfor %}
+</ul>

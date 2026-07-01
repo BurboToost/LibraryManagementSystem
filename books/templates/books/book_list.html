@@ -1,0 +1,6 @@
+<h1>Book Catalog</h1>
+<ul>
+  {% for book in books %}
+    <li><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a> - Status: {{ book.status }}</li>
+  {% endfor %}
+</ul>
