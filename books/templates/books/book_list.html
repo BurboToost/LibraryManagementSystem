@@ -1,6 +1,23 @@
-<h1>Book Catalog</h1>
-<ul>
-  {% for book in books %}
-    <li><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a> - Status: {{ book.status }}</li>
-  {% endfor %}
-</ul>
+{% extends "base.html" %}
+
+{% block title %}Books | Library System{% endblock %}
+
+{% block content %}
+  <p class="meta">Books</p>
+  <h1 class="page-title">Book Catalog</h1>
+  <p class="page-lead">Explore the current catalog and each book's status.</p>
+
+  <div class="cards-grid">
+    {% for book in books %}
+      <article class="card">
+        <h2><a href="{% url 'book_detail' book.pk %}">{{ book.title }}</a></h2>
+        <p>Author: {{ book.author.name }}</p>
+        <p>Status: {{ book.status }}</p>
+      </article>
+    {% empty %}
+      <article class="card">
+        <p>No books have been imported yet.</p>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

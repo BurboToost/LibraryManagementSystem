@@ -1,6 +1,22 @@
-<h1>Library Members</h1>
-<ul>
-  {% for member in members %}
-    <li><a href="{% url 'member_detail' member.pk %}">{{ member.first_name }} {{ member.last_name }}</a></li>
-  {% endfor %}
-</ul>
+{% extends "base.html" %}
+
+{% block title %}Members | Library System{% endblock %}
+
+{% block content %}
+  <p class="meta">Members</p>
+  <h1 class="page-title">Library Members</h1>
+  <p class="page-lead">A record of the people using the library system.</p>
+
+  <div class="cards-grid">
+    {% for member in members %}
+      <article class="card">
+        <h2><a href="{% url 'member_detail' member.pk %}">{{ member.first_name }} {{ member.last_name }}</a></h2>
+        <p>{{ member.email }}</p>
+      </article>
+    {% empty %}
+      <article class="card">
+        <p>No members have been added yet.</p>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

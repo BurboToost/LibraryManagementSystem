@@ -1,5 +1,22 @@
-<h1>{{ book.title }}</h1>
-<p>Author: {{ book.author.name }}</p>
-<p>Published: {{ book.publication_date }}</p>
-<p>Status: {{ book.status }}</p>
-<a href="{% url 'book_list' %}">Back to Catalog</a>
+{% extends "base.html" %}
+
+{% block title %}{{ book.title }} | Books{% endblock %}
+
+{% block content %}
+	<p class="meta">Book detail</p>
+	<h1 class="page-title">{{ book.title }}</h1>
+	<p class="page-lead">A single record from the library catalog.</p>
+
+	<div class="cards-grid">
+		<article class="card">
+			<h2>Details</h2>
+			<p>Author: {{ book.author.name }}</p>
+			<p>Published: {{ book.pub_date }}</p>
+			<p>Status: {{ book.status }}</p>
+		</article>
+	</div>
+
+	<div class="button-row">
+		<a class="button secondary" href="{% url 'book_list' %}">Back to catalog</a>
+	</div>
+{% endblock %}

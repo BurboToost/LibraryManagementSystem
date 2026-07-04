@@ -1,4 +1,13 @@
-<h1>Member Details</h1>
-<p>Name: {{ member.first_name }} {{ member.last_name }}</p>
-<p>Email: {{ member.email }}</p>
-<a href="{% url 'member_list' %}">Back to Members</a>
+{% extends "base.html" %}
+
+{% block title %}{{ member.first_name }} {{ member.last_name }} | Members{% endblock %}
+
+{% block content %}
+	<p class="meta">Member detail</p>
+	<h1 class="page-title">{{ member.first_name }} {{ member.last_name }}</h1>
+	<p class="page-lead">{{ member.email }}</p>
+
+	<div class="button-row">
+		<a class="button secondary" href="{% url 'member_list' %}">Back to members</a>
+	</div>
+{% endblock %}

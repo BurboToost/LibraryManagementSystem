@@ -1,3 +1,13 @@
-<h1>{{ author.name }}</h1>
-<p>{{ author.biography }}</p>
-<a href="{% url 'author_list' %}">Back to list</a>
+{% extends "base.html" %}
+
+{% block title %}{{ author.name }} | Authors{% endblock %}
+
+{% block content %}
+	<p class="meta">Author detail</p>
+	<h1 class="page-title">{{ author.name }}</h1>
+	<p class="page-lead">{{ author.biography|default:"No biography available." }}</p>
+
+	<div class="button-row">
+		<a class="button secondary" href="{% url 'author-list' %}">Back to list</a>
+	</div>
+{% endblock %}

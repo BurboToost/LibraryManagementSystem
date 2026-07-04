@@ -1,6 +1,22 @@
-<h1>Author Directory</h1>
-<ul>
-  {% for author in authors %}
-    <li><a href="{% url 'author_detail' author.pk %}">{{ author.name }}</a></li>
-  {% endfor %}
-</ul>
+{% extends "base.html" %}
+
+{% block title %}Authors | Library System{% endblock %}
+
+{% block content %}
+  <p class="meta">Authors</p>
+  <h1 class="page-title">Author Directory</h1>
+  <p class="page-lead">Browse the authors stored in the library catalog.</p>
+
+  <div class="cards-grid">
+    {% for author in authors %}
+      <article class="card">
+        <h2><a href="{% url 'author-detail' author.pk %}">{{ author.name }}</a></h2>
+        <p>{{ author.biography|default:"No biography available." }}</p>
+      </article>
+    {% empty %}
+      <article class="card">
+        <p>No authors have been imported yet.</p>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

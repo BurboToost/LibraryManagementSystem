@@ -1,0 +1,177 @@
+[
+    {
+        "title": "The Fellowship of the Ring",
+        "author_name": "J.R.R. Tolkien",
+        "author_biography": "English writer, poet, philologist, and academic.",
+        "publication_date": "1954-07-29",
+        "status": "Available"
+    },
+    {
+        "title": "The Two Towers",
+        "author_name": "J.R.R. Tolkien",
+        "author_biography": "English writer, poet, philologist, and academic.",
+        "publication_date": "1954-11-11",
+        "status": "Available"
+    },
+    {
+        "title": "Brave New World",
+        "author_name": "Aldous Huxley",
+        "author_biography": "English writer and philosopher.",
+        "publication_date": "1932-01-01",
+        "status": "Borrowed"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author_name": "Harper Lee",
+        "author_biography": "American novelist known for her warm, humorous, and sharp perspective.",
+        "publication_date": "1960-07-11",
+        "status": "Available"
+    },
+    {
+        "title": "1984",
+        "author_name": "George Orwell",
+        "author_biography": "English novelist, essayist, journalist, and critic noted for his focus on social injustice.",
+        "publication_date": "1949-06-08",
+        "status": "Borrowed"
+    },
+    {
+        "title": "Animal Farm",
+        "author_name": "George Orwell",
+        "author_biography": "English novelist, essayist, journalist, and critic noted for his focus on social injustice.",
+        "publication_date": "1945-08-17",
+        "status": "Available"
+    },
+    {
+        "title": "The Great Gatsby",
+        "author_name": "F. Scott Fitzgerald",
+        "author_biography": "American novelist and short story writer, widely regarded as one of the greatest American writers of the 20th century.",
+        "publication_date": "1925-04-10",
+        "status": "Available"
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author_name": "Jane Austen",
+        "author_biography": "English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry.",
+        "publication_date": "1813-01-28",
+        "status": "Available"
+    },
+    {
+        "title": "Sense and Sensibility",
+        "author_name": "Jane Austen",
+        "author_biography": "English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry.",
+        "publication_date": "1811-10-30",
+        "status": "Borrowed"
+    },
+    {
+        "title": "The Hobbit",
+        "author_name": "J.R.R. Tolkien",
+        "author_biography": "English writer, poet, philologist, and academic.",
+        "publication_date": "1937-09-21",
+        "status": "Available"
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author_name": "J.D. Salinger",
+        "author_biography": "American writer who won acclaim early in life, known for his highly reclusive nature.",
+        "publication_date": "1951-07-16",
+        "status": "Borrowed"
+    },
+    {
+        "title": "One Hundred Years of Solitude",
+        "author_name": "Gabriel García Márquez",
+        "author_biography": "Colombian novelist, short-story writer, screenwriter, and journalist, who was awarded the Nobel Prize in Literature.",
+        "publication_date": "1967-05-30",
+        "status": "Available"
+    },
+    {
+        "title": "Love in the Time of Cholera",
+        "author_name": "Gabriel García Márquez",
+        "author_biography": "Colombian novelist, short-story writer, screenwriter, and journalist, who was awarded the Nobel Prize in Literature.",
+        "publication_date": "1985-03-05",
+        "status": "Available"
+    },
+    {
+        "title": "Fahrenheit 451",
+        "author_name": "Ray Bradbury",
+        "author_biography": "American author and screenwriter who worked in a variety of genres, including fantasy, science fiction, horror, and mystery.",
+        "publication_date": "1953-10-19",
+        "status": "Available"
+    },
+    {
+        "title": "The Grapes of Wrath",
+        "author_name": "John Steinbeck",
+        "author_biography": "American author and the 1962 Nobel Prize in Literature winner, praised for his realistic and imaginative writings.",
+        "publication_date": "1939-04-14",
+        "status": "Borrowed"
+    },
+    {
+        "title": "Of Mice and Men",
+        "author_name": "John Steinbeck",
+        "author_biography": "American author and the 1962 Nobel Prize in Literature winner, praised for his realistic and imaginative writings.",
+        "publication_date": "1937-11-23",
+        "status": "Available"
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author_name": "Ernest Hemingway",
+        "author_biography": "American novelist, short-story writer, and journalist, known for his economical and understated style.",
+        "publication_date": "1952-09-01",
+        "status": "Available"
+    },
+    {
+        "title": "For Whom the Bell Tolls",
+        "author_name": "Ernest Hemingway",
+        "author_biography": "American novelist, short-story writer, and journalist, known for his economical and understated style.",
+        "publication_date": "1940-10-21",
+        "status": "Borrowed"
+    },
+    {
+        "title": "Crime and Punishment",
+        "author_name": "Fyodor Dostoevsky",
+        "author_biography": "Russian novelist, short story writer, essayist, journalist, and philosopher who explored human psychology in troubled political contexts.",
+        "publication_date": "1866-01-01",
+        "status": "Available"
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author_name": "Fyodor Dostoevsky",
+        "author_biography": "Russian novelist, short story writer, essayist, journalist, and philosopher who explored human psychology in troubled political contexts.",
+        "publication_date": "1880-11-01",
+        "status": "Available"
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author_name": "Oscar Wilde",
+        "author_biography": "Irish poet and playwright who became one of London's most popular playwrights in the early 1890s.",
+        "publication_date": "1890-07-01",
+        "status": "Available"
+    },
+    {
+        "title": "Frankenstein",
+        "author_name": "Mary Shelley",
+        "author_biography": "English novelist who wrote the Gothic novel Frankenstein; or, The Modern Prometheus.",
+        "publication_date": "1818-01-01",
+        "status": "Borrowed"
+    },
+    {
+        "title": "Dracula",
+        "author_name": "Bram Stoker",
+        "author_biography": "Irish author, best known today for his 1897 Gothic horror novel Dracula.",
+        "publication_date": "1897-05-26",
+        "status": "Available"
+    },
+    {
+        "title": "The Count of Monte Cristo",
+        "author_name": "Alexandre Dumas",
+        "author_biography": "French writer whose works have been translated into nearly 100 languages, making him one of the most widely read French authors.",
+        "publication_date": "1844-08-28",
+        "status": "Available"
+    },
+    {
+        "title": "The Three Musketeers",
+        "author_name": "Alexandre Dumas",
+        "author_biography": "French writer whose works have been translated into nearly 100 languages, making him one of the most widely read French authors.",
+        "publication_date": "1844-03-14",
+        "status": "Borrowed"
+    }
+]

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Library System{% endblock %}
+
+{% block content %}
+  <p class="meta">Library management system</p>
+  <h1 class="page-title">Read, lend, and organize with clarity.</h1>
+  <p class="page-lead">
+    A polished dashboard for exploring authors, tracking books, managing members,
+    and monitoring borrowing activity in one place.
+  </p>
+
+  <div class="button-row">
+    <a class="button primary" href="{% url 'book_list' %}">Browse books</a>
+    <a class="button secondary" href="{% url 'author-list' %}">Meet authors</a>
+  </div>
+
+  <div class="cards-grid" style="margin-top: 22px;">
+    <article class="card">
+      <h3>Authors</h3>
+      <p style="font-size: 2rem; margin: 0; font-weight: 700; color: var(--brand);">{{ authors_total }}</p>
+    </article>
+    <article class="card">
+      <h3>Books</h3>
+      <p style="font-size: 2rem; margin: 0; font-weight: 700; color: var(--brand);">{{ books_total }}</p>
+    </article>
+    <article class="card">
+      <h3>Members</h3>
+      <p style="font-size: 2rem; margin: 0; font-weight: 700; color: var(--brand);">{{ members_total }}</p>
+    </article>
+    <article class="card">
+      <h3>Borrowed</h3>
+      <p style="font-size: 2rem; margin: 0; font-weight: 700; color: var(--brand);">{{ borrowed_books }}</p>
+    </article>
+  </div>
+
+  <div class="cards-grid" style="margin-top: 22px;">
+    <article class="card">
+      <h2>Quick access</h2>
+      <p>Jump straight to the core parts of the system.</p>
+      <ul class="stack-list">
+        <li><a href="{% url 'author-list' %}">Author directory <span>{{ authors_total }}</span></a></li>
+        <li><a href="{% url 'book_list' %}">Book catalog <span>{{ available_books }} available</span></a></li>
+        <li><a href="{% url 'member_list' %}">Member registry <span>{{ members_total }}</span></a></li>
+        <li><a href="{% url 'borrowing_list' %}">Borrowing records <span>{{ borrow_records_total }}</span></a></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>What this view shows</h2>
+      <p>The homepage gives a quick operational snapshot for the library.</p>
+      <ul>
+        <li>Clear hero section with direct navigation to the most-used pages.</li>
+        <li>Live counts for authors, books, members, and borrowing records.</li>
+        <li>Availability split so the book catalog status is visible at a glance.</li>
+      </ul>
+    </article>
+  </div>
+{% endblock %}

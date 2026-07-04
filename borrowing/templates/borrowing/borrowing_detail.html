@@ -1,5 +1,23 @@
-<h1>Transaction Receipt</h1>
-<p>Member: {{ record.member }}</p>
-<p>Book borrowed: {{ record.book.title }}</p>
-<p>Checkout Date: {{ record.borrow_date }}</p>
-<a href="{% url 'borrowing_list' %}">Back to Logs</a>
+{% extends "base.html" %}
+
+{% block title %}Borrowing Record | Library System{% endblock %}
+
+{% block content %}
+	<p class="meta">Borrowing detail</p>
+	<h1 class="page-title">Transaction Receipt</h1>
+	<p class="page-lead">A single borrowing record from the log.</p>
+
+	<div class="cards-grid">
+		<article class="card">
+			<h2>Record</h2>
+			<p>Member: {{ record.member }}</p>
+			<p>Book borrowed: {{ record.book.title }}</p>
+			<p>Checkout date: {{ record.borrow_date }}</p>
+			<p>Return date: {{ record.return_date }}</p>
+		</article>
+	</div>
+
+	<div class="button-row">
+		<a class="button secondary" href="{% url 'borrowing_list' %}">Back to logs</a>
+	</div>
+{% endblock %}

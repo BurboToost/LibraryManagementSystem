@@ -1,6 +1,23 @@
-<h1>Borrowing Logs</h1>
-<ul>
-  {% for record in records %}
-    <li><a href="{% url 'borrowing_detail' record.pk %}">{{ record.member }} took out "{{ record.book.title }}"</a></li>
-  {% endfor %}
-</ul>
+{% extends "base.html" %}
+
+{% block title %}Borrowing | Library System{% endblock %}
+
+{% block content %}
+  <p class="meta">Borrowing</p>
+  <h1 class="page-title">Borrowing Logs</h1>
+  <p class="page-lead">Track which member borrowed which book.</p>
+
+  <div class="cards-grid">
+    {% for record in records %}
+      <article class="card">
+        <h2><a href="{% url 'borrowing_detail' record.pk %}">{{ record.member }}</a></h2>
+        <p>Book: {{ record.book.title }}</p>
+        <p>Borrowed: {{ record.borrow_date }}</p>
+      </article>
+    {% empty %}
+      <article class="card">
+        <p>No borrowing records have been added yet.</p>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}
